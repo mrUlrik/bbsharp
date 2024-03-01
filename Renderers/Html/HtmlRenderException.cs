@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿namespace bbsharp.Renderers.Html;
 
-namespace bbsharp.Renderers.Html
+internal class HtmlRenderException : Exception
 {
-    class HtmlRenderException : Exception
+    public HtmlRenderException(string Message)
+        : base(Message)
     {
-        public HtmlRenderException(string Message)
-            : base(Message)
-        { }
     }
 }

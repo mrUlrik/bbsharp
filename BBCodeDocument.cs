@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿namespace bbsharp;
 
-namespace bbsharp
+/// <summary>
+///     Represents an entire BBCode document. Similar to the HTML tag &lt;body&gt;
+/// </summary>
+public partial class BBCodeDocument : BBCodeNode
 {
     /// <summary>
-    /// Represents an entire BBCode document. Similar to the HTML tag &lt;body&gt;
+    ///     Creates a new Document Node.
     /// </summary>
-    public partial class BBCodeDocument : BBCodeNode
+    public BBCodeDocument()
     {
-        /// <summary>
-        /// Creates a new Document Node.
-        /// </summary>
-        public BBCodeDocument() : base()
-        {
-            TagName = "body";
-        }
+        TagName = "body";
     }
 }
